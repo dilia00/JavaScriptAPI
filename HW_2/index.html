@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slider">
+        <button class="slider__btn slider__prev">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z"
+                    fill="black" />
+            </svg>
+        </button>
+        <div class="slider__box">
+            <img src="img/1.jpg" alt="slider image" class="slider__img hidden">
+            <img src="img/2.jpg" alt="slider image" class="slider__img hidden">
+            <img src="img/3.jpg" alt="slider image" class="slider__img hidden">
+            <img src="img/4.jpg" alt="slider image" class="slider__img hidden">
+            <img src="img/5.jpg" alt="slider image" class="slider__img hidden">
+        </div>
+
+        <button class="slider__btn slider__next">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z"
+                    fill="black" />
+            </svg>
+        </button>
+        <div class="pagination pagination__team">
+            <div class="pagination__circle inactive" data-index="0"></div>
+            <div class="pagination__circle inactive" data-index="1"></div>
+            <div class="pagination__circle inactive" data-index="2"></div>
+            <div class="pagination__circle inactive" data-index="3"></div>
+            <div class="pagination__circle inactive" data-index="4"></div>
+        </div>
+    </div>
+</body>
+
+</html>
