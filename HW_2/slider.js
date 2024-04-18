@@ -8,6 +8,12 @@ let currentIndex = 0;
 updateClass(currentIndex, sliderImages, 'hidden');
 updateClass(currentIndex, paginationCircles, 'inactive');
 
+setInterval(() => {
+    updateClass(currentIndex, sliderImages, 'hidden');
+    updateClass(currentIndex, paginationCircles, 'inactive');
+    currentIndex = (currentIndex + 1) % sliderImages.length;
+}, 2000);
+
 nextButtonEl.addEventListener('click', showNextSlide);
 prevButtonEl.addEventListener('click', showPreviousSlide);
 paginationEl.addEventListener('click', ({ target }) => {
