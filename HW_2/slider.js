@@ -25,13 +25,14 @@ paginationEl.addEventListener('click', ({ target }) => {
 });
 
 function updateClass(currentIndex, elements, className) {
-    elements.forEach((el, index) => {
-        if (index !== currentIndex) {
-            el.classList.add(className);
-        } else {
-            el.classList.remove(className);
-        }
-    });
+    // elements.forEach((el, index) => {
+    //     if (index !== currentIndex) {
+    //         el.classList.add(className);
+    //     } else {
+    //         el.classList.remove(className);
+    //     }
+    // });
+    elements.forEach((el, index) => el.classList.toggle(className, index !== currentIndex))
 }
 
 function showPreviousSlide() {
